@@ -1,0 +1,84 @@
+.shape{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    &__gradient{
+        background-image: radial-gradient(orange,yellow,green,indigo,violet);
+}
+    &__oval{
+        height: 50px;
+        border-radius: 100px/100px;
+        color: $mainBlue;
+        padding-top: 6px;
+        @media(max-width:550px){
+        padding-top: 12px;
+        }
+    }
+    &__oval-title{
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px red;
+        display: inline;
+        @media(max-width:550px){
+            font-size: 1.3rem;
+        }
+    }
+    &__oval-title span{
+        color: $azureColor;
+    }
+    &__monitor-box{
+        position: relative;
+        top: 32px;
+        height: 450px;
+    }
+    &__square{
+        position: relative;
+        top: 10px;
+        height: 433px;
+        border-radius: 20px;
+        background-color: $mainBlue;
+    }
+    &__square-profile{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: aqua;
+    }
+    &__square-profile img{
+        border-radius: 20px;
+        border: 3px solid $darkPurple;
+        float: left;
+        margin-right: 6px;
+    }
+    &__square-profile p{
+        margin:10px;
+        font-size: 1.145rem;
+        padding-top: 10px;
+        text-align: justify;
+        font-weight: 500;
+        hyphens: auto;
+        line-height: 30px;
+        @media(max-width:500px){
+        font-size: 1rem;
+            
+        }
+        @media(max-width:400px){
+        font-size: 0.9rem;
+        line-height: 23px;
+            
+        }
+        
+    }
+    &__square-profile p span{
+        color: yellowgreen;
+        font-weight: bold;
+    }
+    
+    
+}
+
+

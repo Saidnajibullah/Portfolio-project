@@ -3,7 +3,10 @@ var postcss = require('gulp-postcss');
 var postcssvars = require('postcss-simple-vars');
 var postcssImport = require('postcss-import');
 var postcssnested = require('postcss-nested');
+var mixin = require('postcss-mixins');
 var browserSync = require('browser-sync').create();
+var webpack = require('webpack');
+
 
 
 gulp.task('html', function(){
@@ -13,13 +16,16 @@ gulp.task('html', function(){
 gulp.task('style', function(){
     return gulp
     .src('./app/src/styles/*.css')
-    .pipe(postcss([postcssImport, postcssvars, postcssnested]))
+    .pipe(postcss([postcssImport, mixin, postcssvars, postcssnested]))
     .pipe(gulp.dest('app/dist/styles'));
 });
-gulp.task('script', function(){
-    return gulp
-    .src('./app/src/script/*.js')
-    .pipe(gulp.dest('app/dist/scripts'));
+gulp.task('script', function(callback){
+    webpack(require('./webpack.config.js'), function(err){
+        if(err){
+            console.log(err.toString());
+        }
+    });
+    callback();
 });
 gulp.task('image', function(){
     return gulp

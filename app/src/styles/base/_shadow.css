@@ -1,0 +1,6 @@
+.shadow{
+    box-shadow: 4px 6px 16px $shadowColor, -4px -6px 16px $shadowColor;
+}
+.shadow-bottom{
+    box-shadow: 4px 6px 16px $shadowColor, -4px 0 16px $shadowColor;
+}

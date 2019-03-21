@@ -1,0 +1,80 @@
+.monitor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &__screen{
+        position: relative;
+        top: 32px;
+        width: 90%;
+        height: 180px;
+        border-top: 10px;
+        border-bottom: 10px;
+        border-left: 3px;
+        border-right: 3px;
+        border-style: solid;
+        border-color: $darkPurple;
+        box-sizing: border-box;
+        background-color: aqua;
+        transform: skewY(10deg);
+        left: 28px;
+    }
+    &__screen-image{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    &__screen-image img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99.8%;
+        height: 160px;
+        
+    }
+    &__screen-image-opecity{
+        opacity: 0;
+        transition: 2s;   
+    }
+    &__screen-active{
+        opacity: 1; 
+    }
+    &__keyboard{
+        top: 32px;
+        width: 91%;
+        position: relative;
+        left: 10px;
+        height: 180px;
+        border-top: 10px;
+        border-bottom: 50px;
+        border-left: 3px;
+        border-right: 3px;
+        border-style: solid;
+        border-color: $darkPurple;
+        background-color: $azureColor;
+        transform: rotateZ(10deg);
+        box-sizing: border-box;
+        padding-top: 2px;
+       
+    }
+    &__keyboard-keys{
+        position: relative;
+        width: 13.3%;
+        height: 27.5px;
+        float: left;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        background-color: $darkPurple;
+        @media(min-width:1100px){
+            width: 13.6%;
+        }
+         @media(min-width:400px){
+            width: 13.6%;
+        }
+        @media(min-width:600px){
+            width: 13.65%;
+        }
+        
+    }
+        
+    }
+    
