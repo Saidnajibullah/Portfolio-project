@@ -536,12 +536,14 @@ template {
     }
 
 .monitor__screen-image-opecity{
-        opacity: 0;
-        transition: 2s;   
+        visibility: hidden;
+        transform: scale(0);
+        transition: transform 2s ease-out;   
     }
 
 .monitor__screen-active{
-        opacity: 1; 
+        visibility: visible;
+        transform: scale(1);
     }
 
 .monitor__keyboard{
@@ -823,11 +825,13 @@ template {
         position: absolute;
         left: 27%;
         opacity: 0;
-        transition: 1s;
+        transition: all 1s ease-out;
+        transform: scale(1.1);
     }
 
 .footer__animation{
-        opacity: 1;   
+        opacity: 1;  
+        transform: scale(1);
     }
 
 .footer a{
@@ -871,6 +875,5 @@ template {
         display:none
     
 }
-    }
-
-    
+    }        
+                                       

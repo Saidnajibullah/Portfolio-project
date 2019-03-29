@@ -32,11 +32,13 @@
         
     }
     &__screen-image-opecity{
-        opacity: 0;
-        transition: 2s;   
+        visibility: hidden;
+        transform: scale(0);
+        transition: transform 2s ease-out;   
     }
     &__screen-active{
-        opacity: 1; 
+        visibility: visible;
+        transform: scale(1);
     }
     &__keyboard{
         top: 32px;
