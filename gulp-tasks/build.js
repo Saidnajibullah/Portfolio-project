@@ -34,22 +34,5 @@ gulp.task('usemin', gulp.series('deleteDistFolder', 'style', 'script', function(
     .pipe(gulp.dest('./docs'));
 }));
 
-//gulp.task('useminCss', gulp.series('deleteDistFolder', function(){
-//    return gulp
-//    .src('./app/dist/styles/*.css')
-//    .pipe(usemin({
-//        css: [revision(), cssNano()]
-//    }))
-//    .pipe(gulp.dest('./dist1/dist/styles'));
-//}));
-//
-//gulp.task('useminScripts', gulp.series('deleteDistFolder', function(){
-//    return gulp
-//    .src('./app/dist/scripts/*.js')
-//    .pipe(usemin({
-//        js: [revision(), uglify()]
-//    }))
-//    .pipe(gulp.dest('./dist1/dist/scripts'));
-//}));
 
 gulp.task('build', gulp.parallel('deleteDistFolder', 'optimizeImages', 'usemin'));

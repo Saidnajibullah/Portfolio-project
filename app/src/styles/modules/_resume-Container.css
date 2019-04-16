@@ -1,0 +1,225 @@
+.resume{
+    position: relative;
+    width: 99.5%;
+    height: 100vh;  
+    margin: 3px;    
+    @media(min-width:1300px){
+        width: 1290px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-color:$darkPurple;
+        border-radius: 3px;  
+    }  
+    
+    &__banner{
+        position: relative;
+        width: 99.9%;
+        height: 70px;    
+        background-color: $darkPurple;
+        margin-bottom: 3px;
+        &-logo{
+            position: relative;
+            height: 100%;    
+            & img{
+                height: 100%;
+                width: 230px;
+                &{
+                    @media(max-width: 650px){
+                        width: 130px;
+                    }
+                }
+            }
+            
+        }
+        &-backButton{
+            position: absolute;
+            top: 13px;
+            right: 30px;   
+            float: right;
+            width: 150px;
+            height: 30px;
+            padding-top: 12px;
+            text-align: center;  
+            background-color: $darkPurple;
+            border-style: outset; 
+            border-color:  #b300b3 #cc00cc #cc00cc #b300b3;
+            border-width: 3px;  
+            & a{  
+                text-decoration: none;
+                color: $azureColor; 
+                font-weight: 600;  
+            }  
+        }
+    }
+    &__column-1{
+        position: relative;
+        width: 33.4%;
+        height: 535px;
+        padding: 10px;
+        float: left;  
+        box-sizing: border-box;
+        background-color: $azureColor;
+        @media(max-width: 650px){
+            width: 100%;
+        }
+    }
+    &__column-2{
+        position: relative;   
+        width: 66.6%;            
+        height: 535px;
+        padding: 10px;   
+        box-sizing: border-box;
+        float: right;
+        overflow: auto; 
+        background-color: $azureColor;
+        @media(max-width: 650px){
+            width: 100%; 
+            height: auto;    
+        }
+    }
+    &__photo{
+        position: relative;     
+        width: 100%;
+        height: 100%; 
+        border-style: solid;
+        border-color: $darkPurple;
+        border-top: none;
+        border-left: none;
+        border-bottom: none; 
+        @media(max-width: 650px){
+            border: none;   
+        }
+        &-image{
+            position: relative;
+            width: 170px;
+            height: 170px;
+            border: 5px solid white;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;  
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%; 
+            }
+            
+        }
+        &-briefInfo{
+            position: relative;
+            width: 250px;  
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;     
+            text-align: center;  
+            color: $darkPurple;
+            & p{
+                line-height: 30px;
+                font-weight: 600; 
+                font-size: 1.5rem;
+            }
+            & h3{
+                font-size: 2rem;
+            }
+            
+        }
+        &-quote{
+            position: relative;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            & p{
+                color: $darkPurple;
+                font-weight: 600;
+                & q{
+                    color: limegreen;
+                }
+            }
+        }
+        
+    }
+    &__content{
+        position: relative;     
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        
+        &-title{
+            position: relative;
+            width: 100%;    
+            height: 220px;  
+            float: left;
+            text-align: center; 
+            color: $darkPurple;
+            & h3{
+                font-size: 2rem;
+                font-size: 2rem;
+            }
+            & p{
+                line-height: 7px;
+                font-size: 1.5rem
+            }
+            
+        }
+        &-body{
+            clear: left;
+            position: relative;
+            width: 100%;  
+            color: $darkPurple;  
+            
+            &-subtitle{
+                position: relative;
+                width: 400px;
+                height: auto;
+                @media(max-width: 650px){
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+                & h4{
+                    font-size: 1.8rem;
+                    color: $darkPurple;
+                }
+                & span{
+                    display: block;
+                    line-height: 30px;
+                }
+            }
+            
+            & p{
+                font-size: 1.145rem;
+                text-align: justify;
+                font-weight: 500;
+                hyphens: auto;
+                line-height: 30px;  
+                @media(max-width:500px){
+                font-size: 1rem;
+
+                }
+                
+            }
+            
+            
+            
+        }
+        &-download{
+            position: fixed;
+            top: 530px;
+            right: 20px;
+            width: 180px;
+            height: 50px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgba(20, 60, 20, 10%);
+            
+            
+            & a{
+                text-decoration: none;
+                font-weight: 500;   
+                font: 1.3rem;
+            }
+        }
+          
+    }  
+}

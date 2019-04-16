@@ -18,6 +18,9 @@
         height: 550px;
         width:100%
     }
+    @media(max-width: 650px){
+        border: none;
+    }
     
     
     

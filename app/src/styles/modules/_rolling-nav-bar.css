@@ -17,6 +17,9 @@
         color: $mainBlue;
         top: -10px;
         background-image: radial-gradient(orange,yellow,green,indigo,violet);
+        & a{
+            text-decoration: none;  
+        }
     }
     &__lower-bar{
         position: relative;

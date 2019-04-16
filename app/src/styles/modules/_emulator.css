@@ -13,6 +13,7 @@
     border-top-left-radius: 40px;
     &__shadow{
     box-shadow: -4px -6px 16px $shadowColor,  4px 6px 16px $shadowColor;
+        
     }
     overflow: hidden;
 }

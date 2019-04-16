@@ -11,5 +11,5 @@ gulp.task('watch', function(){
     }
     });
 
-    gulp.watch(['./app/portfolio.html', './app/src/**/*.css', './app/src/**/*.js', './app/dist/impages/*'], gulp.parallel('html', 'style', 'script', 'image')).on('change', function refresh(){browserSync.reload()});
-});
+    gulp.watch(['./app/*.html', './app/src/**/*.css', './app/src/**/*.js', './app/dist/impages/*'], gulp.parallel('html', 'style', 'script', 'image')).on('change', function refresh(){browserSync.reload()});
+});          

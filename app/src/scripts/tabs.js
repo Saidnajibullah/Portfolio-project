@@ -1,54 +1,66 @@
+(function tabClickEvents(){
+    
+    
+var tabContent = document.getElementsByClassName("tabs__content");
+var tab = document.getElementsByClassName("tab-button");
+var i;
+function hideTabs(tabId, tabContentId){
+    
+    const greyColor = "#999999";  
+    const azureColor = "#e7f6f9"; 
+    var tabIds = [];
+    for(i = 0; i < tabContent.length; i++){
+        tabContent[i].style.display = "none";
+    }
+    for(i = 0; i < tab.length; i++){
+        tab[i].style.backgroundColor = greyColor;
+        tabIds.push(tab[i]);
+    }
+    document.getElementById(tabId).style.backgroundColor = azureColor;
+    document.getElementById(tabContentId).style.display = "block";
+}
+   
+(function displayTabs(){
+    for(i = 0; i < tab.length; i++){
+    if(i == 0){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[0].id, tabContent[0].id);
+            e.preventDefault();
+        }); 
+    }
+    else if(i == 1){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[1].id, tabContent[1].id);
+            e.preventDefault();
+        });
+    }
+    else if(i == 2){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[2].id, tabContent[2].id);
+            e.preventDefault();
+        });            
+    }
+    else if(i == 3){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[3].id, tabContent[3].id);
+            e.preventDefault();
+        });            
+    }
+    else if(i == 4){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[4].id, tabContent[4].id);
+            e.preventDefault();
+        });            
+    }
+    else if(i == 5){
+        tab[i].addEventListener("click", function(e){
+            hideTabs(tab[5].id, tabContent[5].id);
+            e.preventDefault();
+        });            
+    }
+  } 
+})();                
 
-            function selecttabContents(){
-                var tabContent = document.getElementsByClassName("content");
-                var tabContents = [];
-                for(i = 0; i <= tabContent.length; i++){
-                    tabContents.push(tabContent[i]);
-                }
-                return tabContents;
-            }
-            function selecttabs(){
-                var tab = document.getElementsByClassName("tab");
-                var tabs = [];
-                for(i = 0; i <= tab.length; i++){
-                    tabs.push(tab[i]);
-                }        
-                return tabs;
-            }     
-            (function listeners(){
-                var tabContents = selecttabContents();
-                var tabs = selecttabs();
-                tabs.forEach(function(value, index){
-                    if(index == 0){
-                        value.addEventListener("click", function(){
-                            tabContents[0].style.display = "block";
-                            tabContents[1].style.display = "none";
-                            tabContents[2].style.display = "none";
-                            tabs[0].style.backgroundColor = "azure";
-                            tabs[1].style.backgroundColor = "red";
-                            tabs[2].style.backgroundColor = "red";
-                        });
-                    }
-                    else if(index == 1){
-                        value.addEventListener("click", function(){
-                            tabContents[1].style.display = "block";
-                            tabContents[0].style.display = "none";
-                            tabContents[2].style.display = "none";
-                            tabs[1].style.backgroundColor = "azure";
-                            tabs[0].style.backgroundColor = "red";
-                            tabs[2].style.backgroundColor = "red";
-                        });
-                    }
-                    else if(index == 2){
-                        value.addEventListener("click", function(){
-                            tabContents[2].style.display = "block";
-                            tabContents[0].style.display = "none";
-                            tabContents[1].style.display = "none";
-                            tabs[2].style.backgroundColor = "azure";
-                            tabs[0].style.backgroundColor = "red";
-                            tabs[1].style.backgroundColor = "red";
-                        });
-                    }
-                });
-            })();
-            document.getElementById("tab0").click();
+document.getElementById(tab[0].id).click();  
+  
+})();                         

@@ -390,6 +390,17 @@ template {
 }
     }
 
+@media(max-width: 650px){
+
+.main-container{
+        border: none
+    
+    
+    
+    
+}
+    }
+
 .intro-board{
     background-color: #0000ff;
     }
@@ -417,6 +428,10 @@ template {
         top: -10px;
         background-image: radial-gradient(orange,yellow,green,indigo,violet);
     }
+
+.rolling-bar__upper-bar a{
+            text-decoration: none;  
+        }
 
 .rolling-bar__lower-bar{
         position: relative;
@@ -858,6 +873,7 @@ template {
 
 .emulator__shadow{
     box-shadow: -4px -6px 16px #0000b3,  4px 6px 16px #0000b3;
+        
     }
 
 .emulator iframe{
@@ -876,4 +892,4 @@ template {
     
 }
     }        
-                                       
+                                           

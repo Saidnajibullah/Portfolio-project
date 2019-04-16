@@ -1,0 +1,35 @@
+.tabs{
+    
+    &__container{
+        position: relative;
+        height: 560px;            
+        width: 100%;    
+        background-color: $azureColorTabs;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;   
+        @media(max-width: 650px){
+            height:400px; 
+            margin-top: 75px;
+        }
+        @media(min-width: 650px) and (max-width: 850px){
+            margin-top: -4px;       
+        } 
+  
+    }
+    &__content{
+        position: absolute;   
+        display: block;  
+        top: 0;     
+        bottom: 2px;   
+        left: 2px;           
+        right: 2px;  
+        overflow: hidden;  
+        border-radius: 3px;  
+        & img{
+            width: 100%;   
+            height: 100%;  
+        }
+    }  
+
+}  
