@@ -203,23 +203,6 @@
             
             
         }
-        &-download{
-            position: fixed;
-            top: 530px;
-            right: 20px;
-            width: 180px;
-            height: 50px;
-            padding: 15px;
-            box-sizing: border-box;
-            background-color: rgba(20, 60, 20, 10%);
-            
-            
-            & a{
-                text-decoration: none;
-                font-weight: 500;   
-                font: 1.3rem;
-            }
-        }
           
     }  
 }

@@ -615,10 +615,6 @@ template {
             padding: 15px;
             box-sizing: border-box;
             background-color: rgba(20, 60, 20, 10%);
+            
+            
         }
-
-.resume__content-download a{
-                text-decoration: none;
-                font-weight: 500;   
-                font: 1.3rem;
-            }
